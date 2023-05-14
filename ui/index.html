@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Music Player (try)</title>
+	<link rel="stylesheet" href="./lib/mdui/css/mdui.css" />
+	<script type="text/javascript" src="./lib/mdui/js/mdui.js"></script>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-drawer-body-left">
+	<div class="appbar mdui-appbar mdui-appbar-fixed">
+		<div class="mdui-toolbar mdui-color-theme">
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon">
+			<i class="mdui-icon material-icons">menu</i>
+		</a>
+		<a href="javascript:;" class="mdui-typo-headline">Music Player</a>
+		<!-- <a href="javascript:;" class="mdui-typo-title">Title</a> -->
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon">
+			<i class="mdui-icon material-icons">shuffle</i>
+		</a>
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon">
+			<i class="mdui-icon material-icons">fast_rewind</i>
+		</a>
+		<a onClick="play()" class="mdui-btn mdui-btn-icon">
+			<i id="play-icon" class="mdui-icon material-icons">play_arrow</i>
+		</a>
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon">
+			<i class="mdui-icon material-icons">fast_forward</i>
+		</a>
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon">
+			<i class="mdui-icon material-icons">repeat_one</i>
+		</a>
+		<div id="timeSlider"style="width: 60%;">
+			<label class="mdui-slider" >
+				<input id="input-timeSlider" type="range" step="0.0000001" min="0" max="1" value="0"/>
+			</label>
+		</div>
+		<!-- <div style="width: 60%;">
+
+		<label class="mdui-slider" style="width: 60%;">
+			<input id="input-timeSlider" type="range" min="0" max="0"/>
+		</label>
+
+		</div> -->
+		<div class="mdui-toolbar-spacer"></div>
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon">
+			<i class="mdui-icon material-icons">volume_up</i>
+		</a>
+		<!-- <label class="mdui-slider" style="width: 10%;">
+			<input type="range" step="1" min="0" max="100"/>
+		</label> -->
+		<!-- <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+			<i class="mdui-icon material-icons">refresh</i>
+		</a> -->
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon">
+			<i class="mdui-icon material-icons">subtitles</i>
+		</a>
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon">
+			<i class="mdui-icon material-icons">playlist_play</i>
+		</a>
+	</div>
+	<div class="mdui-drawer">
+	</div>
+	<audio id="music" src="/example/季節の頬とワンダーランド (feat. 初音ミク)­­.wav"></audio>
+</div>
+<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
