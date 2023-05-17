@@ -2,13 +2,15 @@
   "name": "musicplayer",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "electron ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mdui": "^1.0.2"
+    "@electron/remote": "^2.0.9",
+    "mdui": "^1.0.2",
+    "music-metadata": "^8.1.4"
   }
 }
